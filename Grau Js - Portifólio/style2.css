@@ -1,0 +1,112 @@
+body{
+    text-align: center; /* centralizar o texto  */
+    font-family: cursive; /* tipo de fonte     */
+    color: chartreuse; /* escolher a cor    */
+    font-size: 20px; /* tamanho da fonte     */
+    text-shadow: 5px 5px 5px red; /* 1- tamanho da sombra; 2- profundidade e 3-espalhado na tela. */
+    /*background-color: blue;*/
+    /*background: linear-gradient(red, pink, green); /*colocar várias cores de fundo. tem como colocar porcentagem*/
+    background: radial-gradient(black, red, purple);
+    animation: animação;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes animação{    
+    from{box-shadow: 10px 10px 10px black;}
+    to{box-shadow: 10px 10px 10px green;}
+
+
+
+}
+
+#d1{
+   width: 100px;
+   height: 75px;
+   background-color: blueviolet;
+   color: black;
+   font-size: 25px;
+   border: 5px solid blue; /* colocar borda contínua e a sua cor*/
+   margin-left: auto; /*desloca a sua margem totalmente/automaticamente para à esquerda*/
+   margin-right: auto ; /*descola a sua margem totalmente/automaticamente para á direita*/
+   margin-top: 40px; /*afastamento do texto em cima com relação ao debaixo*/
+   transform: rotate(20deg); /*muda o ângulo*/
+}
+
+#d2{
+    width: 100px;
+    height: 75px;
+    background-color: blueviolet;
+    color: black;
+    font-size: 25px;
+    border: 5px solid blue; /* colocar borda contínua e a sua cor*/
+    margin-left: auto; /*desloca a sua margem totalmente/automaticamente para à esquerda*/
+    margin-right: auto ; /*descola a sua margem totalmente/automaticamente para á direita*/
+    margin-top: 40px;  /*afastamento do texto em cima com relação ao debaixo*/
+    border-style: solid; /*borda contínua*/
+    border-width: thin; /*para deixar a borda fina; mediu: para uma borda média; thick: para uma borda mais grossa*/
+    box-shadow: 10px 10px 10px purple; /*sombra espaço na tela, profundidade e o quanto se espalha.*/
+    border-radius: 15px; /*arredondar as bordas*/
+}
+
+#d3{
+    width: 140px;
+    height: 75px;
+    background-color: blueviolet;
+    color: black;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+    border-style: dashed;
+    /*float: right;  deixar flutuante*/
+    /*position: fixed; ficar no mesmo lugar. exemplo da barra de rolagem*/
+    /*position: relative; fica relativo às configurações que a pessoa queira.*/
+    /*position: absolute; fica no canto superior esquerdo*/
+}
+
+#d4{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    color: black;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-style: dashed;
+
+    animation: animation 5s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+     
+}
+
+@keyframes animation{
+
+    from{box-shadow: 10px 10px 10px black;} /*inicia nessa cor*/
+    to{box-shadow: 10px 10px 10px blue;} /*termina nessa cor*/
+
+
+} /*para linkar com a animação*/
+
+img{
+    
+    width: 100px;
+    height: 100px;
+    border-style: dashed;
+
+    animation: imagem 5s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes imagem{
+    from{box-shadow: 10px 10px 10px black;}
+    to{box-shadow: 10px 10px 10px blue;}
+
+
+}

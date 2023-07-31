@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro canvas</title>
+</head>
+<body>
+     <p>Criando Canvas</p>
+    <canvas id = 'icanvas' style="border:3px solid blue" width="600" height="400"></canvas>
+
+
+
+
+
+
+    <script type="text/javascript">
+    var canvas = document.getElementById("icanvas") //É para acessar o id do canvas
+    var cvs = canvas.getContext('2d') //É para consultar o canvas
+
+    cvs.fillStyle = 'red' //Cor do círculo
+    cvs.beginPath() //Inicia o caminho do círculo
+    cvs.arc(480,70,50,0,Math.PI*2)
+    cvs.closePath() //Finaliza o caminho do círculo
+    cvs.fill() //Mostra o círculo
+
+    </script>
+</body>
+</html>

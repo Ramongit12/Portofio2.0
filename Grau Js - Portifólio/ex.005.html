@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV html5</title>
+
+<style>
+      body{ background-color: yellowgreen;
+           
+
+      }
+
+      .Menu{ position: fixed;
+             background: rgb(red, green, blue);
+             width: 100;
+             margin-top:0px;
+             top:0px;
+             z-index: 10;
+       }
+
+     .Links{ display: inline;
+             padding-left: 33px;
+             padding-right: 50px;
+             font-family: cursive;
+             font-size: 20px;
+              
+     }
+
+     .Links:hover{font-size: 25px;
+                  text-decoration: underline;
+
+        
+     }
+
+</style>
+
+</head>
+<body>
+
+    <div>
+    <center>
+        <ul class="Menu">
+        <li class="Links">  <a href="#imagens"> Imagens </a> </li>
+        <li class="Links">  <a href="#audio"  > Audios  </a> </li>
+        <li class="Links">  <a href="#video"  > Videos  </a> </li>
+        </ul>
+
+       <section id="imagens">
+       <h1> Imagem HTML</h1>
+       <img src="Sylvester.webp" alt="Sylvester Stalone" style="width: 300px; height: 300px;"> <br> <br>
+       <img src="negan.jpg" alt="negan" style="width: 300px; height: 300px;"> <br> <br>
+       </section>
+
+       <section id="audio">
+       <h2> Audio HTML</h2>
+       <audio src="kaiokensound.mp3" autoplay controls></audio> <!--o control é necessário para colocar audio-->
+       </section>
+
+       <section id="video">
+       <h3> Videos HTML </h3>
+       <video src="ferias.mp4" controls style="width: 300px; height: 300px;" ></video>
+       </section>
+
+    </center>
+   </div>
+</body>
+</html>

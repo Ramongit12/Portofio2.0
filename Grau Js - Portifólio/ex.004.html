@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Formulário</title>
+
+<style>
+     body{ background-color: blueviolet;
+          
+
+
+     }
+
+</style>
+    
+</head>
+<body>
+    <center>
+    <h1> Formulário </h1>
+    <p> Nome: <input type="text" name="nome" id="inome" placeholder="Digite seu nome"> </p>
+    <p> Sobrenome: <input type="text" name="sobrenome" id="isobrenome" placeholder="Digite seu sobrenome"> </p>
+    <p> E-mail: <input type="email" name="email" id="iemail" placeholder="Digite seu e-mail"> </p>
+    <p> Data de Nascimento: <input type="date" name="data" id="idata" placeholder="Digite sua data nascimento"> </p>
+    <p> <input type="submit" value="Enviar"> </p> <br> <br>
+
+    <h1> Formulário de Validação</h1>
+
+<fieldset>
+   <legend> Dados Pessoais: </legend>
+   <form action="main.js" method="get">
+
+   <p><label for="inome"> Nome: </label>
+   <input type="text" name="name" id="inome" placeholder="Digite seu nome " minlength="6" maxlength="30" required name = 'nome'>
+   </p> 
+ 
+   <p>
+      <label for="isobrenome">Sobrenome: </label>
+       <input type="text" name="sobrenome" id="isobrenome" placeholder="Digite seu sobrenome" required sobrenome = 'sobrenome'>
+   </p>
+
+<p>
+
+  <label for="iemail">E-mail: </label>   
+  <input type="email" name="e-mail" id="iemail" placeholder="Digite seu e-mail" required e-mail = 'e-mail'> 
+
+</p>
+
+<p>
+  <label for="idate">Data: </label>
+   <input type="date" name="data" id="idate" placeholder="Digite sua data de nascimento" required date = 'data'>
+
+</p>
+
+<input type="submit" value="Enviar">
+</form>
+</fieldset>
+
+    </center>
+
+    
+</body>
+</html>
